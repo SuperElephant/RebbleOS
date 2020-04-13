@@ -436,7 +436,7 @@ int _rdb_gc_for_bytes(const struct rdb_database *db, struct fd *fd, int bytes) {
     return 1;
 }
 
-int rdb_insert(const struct rdb_database *db, uint8_t *key, uint16_t key_size, uint8_t *data, uint16_t data_size)
+int rdb_insert(const struct rdb_database *db, const uint8_t *key, uint16_t key_size, const uint8_t *data, uint16_t data_size)
 {
     struct rdb_iter it;
 
